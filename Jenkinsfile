@@ -5,13 +5,13 @@ pipeline {
       parallel {
         stage('Build DEV') {
           steps {
-            sh 'echo "Run on DEV"'
+            bat 'echo "Run on DEV"'
           }
         }
 
         stage('Chrome') {
           steps {
-            sh 'echo "run on chrome"'
+            bat 'echo "run on chrome"'
           }
         }
 
