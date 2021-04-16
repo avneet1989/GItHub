@@ -1,17 +1,17 @@
 pipeline {
   agent any
   stages {
-    stage('Build DEV') {
+    stage('Built QA') {
       parallel {
-        stage('Build DEV') {
+        stage('Built QA') {
           steps {
-            bat 'echo "Run on DEV"'
+            sh 'echo "run on QA"'
           }
         }
 
         stage('Chrome') {
           steps {
-            bat 'echo "run on chrome"'
+            sh 'echo "run on chrome"'
           }
         }
 
