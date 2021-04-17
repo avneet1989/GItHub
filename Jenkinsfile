@@ -18,5 +18,22 @@ pipeline {
       }
     }
 
+    stage('QA') {
+      parallel {
+        stage('QA') {
+          steps {
+            bat 'run on QA aain'
+          }
+        }
+
+        stage('Chrome') {
+          steps {
+            bat 'Run on Chrome'
+          }
+        }
+
+      }
+    }
+
   }
 }
