@@ -22,13 +22,13 @@ pipeline {
       parallel {
         stage('QA') {
           steps {
-            bat 'run on QA aain'
+            bat 'echo run on QA again'
           }
         }
 
         stage('Chrome') {
           steps {
-            bat 'Run on Chrome'
+            bat 'echo Run on Chrome'
           }
         }
 
